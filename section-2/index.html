@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!-- Determinate document type and version. Browsers can read multiple type files -->
+<html lang="en"> <!-- Root element and lang attribute -->
+  <head> <!-- Provide metadata to the browser -->
+    <!-- Meta tags describe the content and provide extra information to the browser -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Search engine related meta tags -->
+    <title>Impresive website</title>
+    <meta name="description" content="This is my website description and it's very important">
+    <meta name="keywords" content="web development, web design, web development in Valencia">
+    <!-- Use meta:robots c=NOINDEX, NOFOLLOW to avoid SE indexation -->
+  </head>
+  <body> <!-- html document content -->
+    <h1>Welcome friend!</h1>
+    <p>I'm a paragraph. Lorem ipsum, <strong>dolor sit amet consectetur adipisicing elit</strong>. Nobis repudiandae illum nihil ullam dignissimos vel non repellendus, eaque earum animi autem nostrum aliquid voluptatum nam dicta praesentium? Quibusdam dolores porro ad tempore, <em>quaerat excepturi eaque deleniti fugiat dignissimos doloribus doloremque ipsa dolorem quis modi</em>, consectetur libero eveniet officiis, possimus ab quam omnis sit architecto quisquam.
+    <!-- strong and em (and others) are semantic tags, they aren't just style like b o i -->
+    <br>
+    <br> 
+    Natus dolores quo saepe perspiciatis voluptates ab veritatis similique, officiis molestiae a nihil ipsum qui! Et a placeat fugit dolor praesentium nulla suscipit dolorem nihil eum provident expedita, perferendis, adipisci quidem rerum sit aliquam? Aspernatur est repellat soluta placeat molestias dignissimos temporibus animi <a href="http://google.com" target="_blank">expedita</a>?</p>
+    
+    <img src="../images/cactus.jpg" alt="Cactus" width="200">
+    <img src="https://picsum.photos/200/300" alt="Photo!">
+
+    <p>Simple nested list</p>
+    <ul>
+      <li>Item one</li>
+      <li>Item with a list
+        <ol type="a">
+          <!-- ol lists acept types -->
+          <li>2nd list Item</li>
+          <li>2nd list Item</li>
+        </ol>
+      </li>
+      <li>Item three</li>
+    </ul>
+    
+    <p>Simple table</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Last name</th>
+          <th>e-mail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>jdoe@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>Deet</td>
+          <td>jdeet@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Send me your contact info</p>
+    <form action="someThing.php">
+      <!-- action to process form information -->
+      <div>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name">
+        <!-- name is the identifier for backed porpouses -->
+      </div>
+      <div>
+        <label for="email">E-mail</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+      </div>
+      <div>
+        <label for="msg">Message</label><br>
+        <textarea name="msg" id="msg" cols="20" rows="5"></textarea>
+      </div>
+      <div>
+        <label for="sex">Gender</label>
+        <select name="sex" id="sex">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div>
+        <label for="age">Age</label><br>
+        <input type="number" name="age" id="age">
+      </div>
+      <div>
+        <label for="birthdate">Birthdate</label>
+        <input type="date" name="birthdate" id="birthdate">
+      </div>
+      <div>
+        <label for="membership">Membership</label><br>
+        <input type="radio" name="membership" id="membership" value="basic">Basic <br>
+        <input type="radio" name="membership" id="membership" value="standard" checked>Standard <br>
+        <input type="radio" name="membership" id="membership" value="premium">Premium <br>
+      </div>
+      <div>
+        <label for="hobbies">Membership</label><br>
+        <input type="checkbox" name="hobbies" id="hobbies" value="tennis" checked>Tennis <br>
+        <input type="checkbox" name="hobbies" id="hobbies" value="soccer" checked>Soccer <br>
+        <input type="checkbox" name="hobbies" id="hobbies" value="diving">Diving <br>
+      </div>
+      <br>
+      <input type="submit" value="Submit">
+      <button type="reset">Reset</button>
+    </form>
+
+    <!-- Entities -->
+    <p>Entities test</p>
+    <p>Hi, my name is &nbsp; &nbsp; Jeronimo</p> <!-- non breakeable space -->
+    <p>5 &gt; 2</p>
+    <p>5 &lt; 8</p>
+    <p> &copy;  &reg; &dollar; &euro;</p>
+    <p>Save the file pressing <kbd>Ctrl + S</kbd></p>
+  </body>
+</html>
