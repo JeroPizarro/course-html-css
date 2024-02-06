@@ -1,0 +1,40 @@
+/* element selector */
+body {
+  color: #000;
+  background-color: #F0EDCF;
+
+  /* Font rules */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.6rem;
+}
+
+/* nested selector */
+body h1 {
+  color: #0B60B0;
+}
+
+/* class selector  */
+.box {
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.ictalized {
+  font-style: italic;
+}
+
+/* id selector */
+#welcome {
+  color: #40A2D8;
+}
+
+/* muultiple selectors */
+#welcome, #info {
+  font-size: larger;
+}
