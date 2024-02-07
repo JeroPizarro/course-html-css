@@ -1,0 +1,58 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 960px;
+  margin: 30px auto;
+}
+
+.box {
+  border: 1px solid #333;
+  background-color: #f0f8ff;
+  color: #000;
+  line-height: 1.4rem;
+  
+  padding: 10px;
+  margin: 10px;
+}
+
+.box h3,p {
+  margin-bottom: 5px;
+}
+
+.box h3 {
+  /* Text alignment */
+  text-align: center;
+}
+
+.box p {
+  text-align: justify;
+}
+
+#second-box {
+  /* Shorthand top/bottom left/right */
+  padding: 50px 25px;
+
+  /* Floating props, must have box-sizing: border-box; to fit right*/
+  float: left;
+  width: 45%;
+}
+
+#third-box {
+  /* Shorthand top, right, bottom, left */
+  padding: 20px 10px 40px 50px;
+
+  /* Floating props */
+  float: right;
+  width: 50%;
+}
+
+/* Aux class to clear float elements at left & right */
+.clr {
+  clear: both;
+}
+
