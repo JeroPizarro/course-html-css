@@ -1,0 +1,111 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  padding: 10px;
+}
+
+.color-one {
+  background-color: #ffb296;
+}
+
+.color-two {
+  background-color: #7fbfbf;
+}
+
+.color-three {
+  background-color: #7fbf9f;
+}
+
+.btn {
+  background-color: #444;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color:#a1a1a1;
+  color: #222222;
+}
+
+.vertical-menu {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.vertical-menu ul {
+  line-height: 1.6rem;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.vertical-menu ul li a {
+  text-decoration: none;
+  color: #444;
+}
+
+.vertical-menu ul li a:hover {
+  color: #2f2f2f;
+  border-bottom: 3px solid #d3d3d3;
+}
+
+.horizontal-menu {
+  overflow: auto;
+}
+
+.horizontal-menu ul {
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-menu ul li {
+  float: left;
+}
+
+.horizontal-menu ul li a {
+  display: block;
+  color: #444;
+  text-decoration: none;
+  padding: 15px 10px;
+}
+
+.horizontal-menu ul li a:hover {
+  background-color: #58856f;
+  color: #b4b4b4;
+}
+
+#inline-list k{
+  padding: 0;
+}
+
+#inline-list li {
+  display: inline;
+}
+
+#inline-list li a {
+  padding: 10px;
+  border: 1px solid #444;
+  text-decoration: none;
+}
+
+#leaf {
+  display: block;
+  /*  margin auto needs display block to work  */
+  margin: auto;
+}
+
+.box {
+  background-color: lightgray;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1.4rem;
+  padding: 10px;
+  width: 32.8%;
+}
