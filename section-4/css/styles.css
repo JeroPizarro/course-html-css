@@ -90,6 +90,11 @@ p {
   color: var(--white-color);
 }
 
+.l-heading {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
 /* Nav */
 
 header {
@@ -187,6 +192,54 @@ nav ul li a.selected  {
 
 .box .material-symbols-outlined{
   font-size: 48px;
+}
+
+/* About-info */
+
+.about-info .info-left, 
+.about-info .info-right {
+  width: 50%;
+  min-height: 100%;
+}
+
+.about-info .info-left {
+  float: left;
+  padding: 40px;
+}
+
+.about-info .info-right {
+  float: right;
+}
+
+.about-info .info-right img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* About-testimonials */
+.testimonials {
+  height: 600px;
+  background: url('../img/test-bg.jpg') no-repeat center center/cover;
+}
+
+.testimonials h2 {
+  color: var(--white-color);
+  text-align: center;
+  padding-top: 60px;
+}
+
+.testimonials .testimonial {
+  padding: 20px;
+  margin: 30px 0;
+  opacity: .8;
+}
+
+.testimonials .testimonial img {
+  width: 100px;
+  float: left;
+  border-radius: 100%;
+  margin-right: 15px;
 }
 
 /* Footer */
