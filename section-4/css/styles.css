@@ -242,6 +242,27 @@ nav ul li a.selected  {
   margin-right: 15px;
 }
 
+/* Contact */
+.contact-form {
+  padding: 60px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group input, 
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--dark-green-color);
+}
+
 /* Footer */
 footer {
   text-align: center;

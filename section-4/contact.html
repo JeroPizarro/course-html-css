@@ -5,10 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Welcome to the most sophisticated hotel in Valencia, Spain.">
   <meta name="keywords" content="valencia hotel, ecofriendly hotel, petfriendly hotel, spa hotel">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css">
   <title>JP Hotel - Contact</title>
 </head>
 <body>
-  Contact
+  <header>
+    <div class="container">
+      <nav>
+        <h1><a href="index.html">JPH</a></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="selected">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="contact-form bg-light">
+    <div class="container">
+      <h1 class="l-heading"><span class="highlight">Contact</span> Us</h1>
+      <p>Please fill the form bellow to contact us</p>
+      <form action="process.php">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message">
+          </textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+  <section class="contact-info">
+    <div class="box bg-dark">
+      <span class="material-symbols-outlined">
+        location_on
+      </span>
+      <h3>Location</h3>
+      <p>Plaza de Antonio Cortis 21, Valencia, Spain</p>
+    </div>
+    <div class="box bg-dark">
+      <span class="material-symbols-outlined">
+        call
+      </span>
+      <h3>Phone Number</h3>
+      <p>+34 665 555 555</p>
+    </div>
+    <div class="box bg-dark">
+      <span class="material-symbols-outlined">
+        mail
+      </span>
+      <h3>Email Adress</h3>
+      <p>info@jphotel.com</p>
+  </section>
+  <div class="clr"></div>
+  <footer>
+    <p>Hotel JP &copy; 2024, All Rights Reserved</p>
+  </footer>
 </body>
 </html>
