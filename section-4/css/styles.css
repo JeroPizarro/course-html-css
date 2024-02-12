@@ -13,11 +13,18 @@ body {
   color: #222;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.8em;
+
+  /* Color variables */
+  --green-color: #6aa84f;
+  --dark-green-color: #38761d;
+  --yellow-color: #ffc332;
+  --black-color: #222;
+  --white-color: #f3f6f4;
 }
 
 a {
   text-decoration: none;
-  color: #222;
+  color: var(--black-color);
 }
 
 h1, h2, h3 {
@@ -36,14 +43,57 @@ p {
   overflow: auto;
 }
 
+.highlight {
+  color: var(--yellow-color);
+}
+
+.lead {
+  font-size: 20px;
+}
+
 .clr {
   clear: both;
+}
+
+.btn {
+  background-color: var(--black-color);
+  border: none;
+  color: var(--white-color);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 13px 20px;
+}
+
+.btn:hover  {
+  background-color: var(--yellow-color);
+  color: var(--black-color);
+}
+
+.btn-light {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.bg-light {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.bg-dark {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.bg-green {
+  background-color: var(--green-color);
+  color: var(--white-color);
 }
 
 /* Nav */
 
 header {
-  background-color: #6aa84f;
+  background-color: var(--green-color);
   overflow: auto;
 }
 
@@ -70,6 +120,79 @@ nav ul li a {
 
 nav ul li a:hover, 
 nav ul li a.selected  {
-  background-color: #38761d;
-  color: #f3f6f4;
+  background-color: var(--dark-green-color);
+  color: var(--white-color);
+}
+
+/* Showcase */
+
+.showcase {
+  background: url(../img/showcase.jpg) no-repeat center center/cover;
+  height: 500px;
+}
+
+.showcase .showcase-content {
+  text-align: center;
+  color: var(--white-color);
+  margin-top: 15%;
+}
+
+.showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+.showcase .showcase-content h1, 
+.showcase .showcase-content p  {
+  padding: 0 30px;
+}
+
+.showcase .showcase-content a {
+  margin-top: 15px;
+}
+
+/* Home-info */
+
+.home-info {
+  height: 400px;
+}
+
+.home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url(../img/photo-1.jpg) no-repeat center center/cover;
+  min-height: 100%;
+}
+
+.home-info .info-content {
+  float: right;
+  min-height: 100%;
+  overflow: hidden;
+  padding: 50px 30px;
+  text-align: center;
+  width: 50%;
+}
+
+.home-info .info-content a {
+  margin-top: 15px;
+}
+
+/* Features */
+.box {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  padding: 50px;
+}
+
+.box .material-symbols-outlined{
+  font-size: 48px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: var(--dark-green-color);
+  color: var(--white-color);
+  padding: 20px;
 }
