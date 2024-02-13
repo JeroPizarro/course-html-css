@@ -7,4 +7,6 @@ Folder structure:
   - section-3: CSS basics
   - section-4: Hotel website
   - section-5: Intro to responsiveness (vh, @media)
+  - section-6: Flexbox
+  - section-7: EdgeLedger website
   - ...
