@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background: #333 url('https://picsum.photos/seed/mountain/2000') no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+  text-align: center;
+  padding: 4rem;
+  padding-top: 15rem;
+  font-size: 1.4rem;
+}
+
+h1, p {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  padding: 1rem;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    padding-top: 4rem;
+  }
+}

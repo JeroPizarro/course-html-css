@@ -6,4 +6,5 @@ Folder structure:
   - section-2: HTML basics
   - section-3: CSS basics
   - section-4: Hotel website
+  - section-5: Intro to responsiveness (vh, @media)
   - ...
