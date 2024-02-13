@@ -1,0 +1,45 @@
+/* Nav */
+nav h1 {
+  float: none;
+  text-align: center;
+}
+
+nav ul, nav ul li {
+  float: none;
+}
+
+nav ul li a {
+  padding: 5px;
+}
+
+/* Home-info */
+.home-info .info-img {
+  display: none;
+}
+
+.home-info .info-content {
+  float: none;
+  width: 100%;
+}
+
+/* Features */
+.box {
+  float: none;
+  width: 100%;
+}
+
+/* About-info */
+.about-info .info-left, 
+.about-info .info-right {
+  float: none;
+  width: 100%;
+}
+
+.about-info .info-left h1 {
+  text-align: center;
+}
+
+.about-info .info-right img {
+  width: 85%;
+  margin-bottom: 30px;
+}
