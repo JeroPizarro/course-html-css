@@ -1,6 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("utilities.css");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+h1, h2 {
+  line-height: 1.2rem;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  align-items: center;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  opacity: .8;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar .logo {
+  align-items: center;
+  display: flex;
+}
+
+.navbar .logo .l-icon {
+  margin-right: 8px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: var(--white-color);
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* Hero */
+.hero * {
+  z-index: 5;
+}
+
+.hero  {
+  background: url(../img/home/showcase.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: var(--white-color);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.hero .content h1 {
+  font-size: 3.4rem;
+}
+
+.hero .content p {
+  font-size: 1.4rem;
+  /* avoid width extension */
+  max-width: 600px;
+  /* top l/r bottom */
+  margin: 20px 0 30px;
+}
+
+/* About-services */
+.about-services {
+  padding: 30px;
+  margin: 90px 0;
+}
+
+/* Cases */
+.cases {
+  margin: 90px 0;
+}
+
+.cases img:hover {
+  opacity: .7;
+}
