@@ -60,6 +60,10 @@ body {
   background-color: var(--white-color);
 }
 
+.bg-dark {
+  background-color: var(--black-color);
+}
+
 /* Buttons */
 .btn {
   align-items: flex-end;
@@ -195,5 +199,3 @@ body {
 .flex-grid img {
   max-height: 245px;
 }
-
-

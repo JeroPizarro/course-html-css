@@ -133,3 +133,44 @@ img {
 .cases img:hover {
   opacity: .7;
 }
+
+/* Team */
+.team {
+  margin: 90px 0;
+}
+
+.team img {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Contact */
+.callback-form {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input[type=text],
+.callback-form input[type=email] {
+  border-radius: 5px;
+  border: 2px solid var(--white-color);
+  height: 40px;
+  outline: none;
+  padding: 4px;
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+}
