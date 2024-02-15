@@ -120,7 +120,7 @@ img {
 }
 
 /* About-services */
-.about-services {
+.about {
   padding: 30px;
   margin: 90px 0;
 }
@@ -134,6 +134,12 @@ img {
   opacity: .7;
 }
 
+@media (max-width: 768px) {
+  .cases {
+    margin: 60px 0;
+  }
+}
+
 /* Team */
 .team {
   margin: 90px 0;
@@ -142,6 +148,12 @@ img {
 .team img {
   border-radius: 5px;
   margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .team {
+    margin: 60px 0;
+  }
 }
 
 /* Contact */
@@ -169,8 +181,44 @@ img {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .callback-form .form-control {
+    margin-bottom: 20px;
+  }
+}
+
 /* Footer */
 .footer {
   display: flex;
   justify-content: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px;
+    margin: 0 3px;
+  }
+
+  /* Hero */
+  .hero .content h1 {
+    font-size: 2rem;
+    padding: 15px 0;
+  }
+
+  .hero .content p {
+    text-align: center;
+  }
+
+  /* About */
+  .about {
+    margin: 60px 0;
+  }
 }
