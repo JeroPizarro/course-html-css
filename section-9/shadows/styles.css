@@ -1,0 +1,60 @@
+.container {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 1px solid;
+  padding: 10px;
+  margin: 20px;
+  background-color: orangered;
+}
+
+.box:nth-child(1) {
+  /* offset-x, offset-y, color */
+  box-shadow: 10px 10px black;
+}
+
+.box:nth-child(2) {
+  /* offset-x, offset-y, blur-radius,  color */
+  box-shadow: 10px 10px 10px black;
+}
+
+.box:nth-child(3) {
+  /* offset-x, offset-y, blur-radius, spread-radius, color */
+  box-shadow: -10px -10px 10px 5px black;
+}
+
+.box:nth-child(4) {
+  /* inset, offset-x, offset-y, color */
+  box-shadow: inset 10px 10px 10px black;
+}
+
+.container:nth-child(2) {
+  margin-top: 50px;
+  font-size: 3rem;
+}
+
+.container:nth-child(2) .a {
+  /* h-shadow, v-shadow, color */
+  text-shadow: 5px 5px steelblue;
+}
+
+.container:nth-child(2) .b {
+  /* h-shadow, v-shadow, blur, color */
+  text-shadow: 5px 5px 10px steelblue;
+}
+
+.container:nth-child(2) .c {
+  color: white;
+  /* h-shadow, v-shadow, blur, color */
+  text-shadow: 5px 5px 10px steelblue;
+}
+
+.container:nth-child(2) .d {
+  /* h-shadow, v-shadow, blur, color */
+  text-shadow: -5px -5px 10px steelblue;
+}

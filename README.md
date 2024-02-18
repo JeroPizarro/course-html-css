@@ -9,4 +9,4 @@ Folder structure:
   - section-5: Intro to responsiveness (vh, @media)
   - section-6: Flexbox
   - section-7: EdgeLedger website
-  - ...
+  - section-9: Advanced css

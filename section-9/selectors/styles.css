@@ -1,0 +1,70 @@
+/* Targeted selectors */
+
+div p {
+  background-color: lightblue;
+}
+
+/* Direct child */
+div>p {
+  background-color: lightcoral;
+}
+
+/* Directly after */
+div+p {
+  background-color: lightcyan;
+}
+
+/* By attribute */
+a[target] {
+  background-color: lightgoldenrodyellow;
+}
+
+/* By specific attribute */
+input[type='submit'] {
+  background-color: lightgreen;
+}
+
+/* Pseudo Selectors */
+/* First child */
+.list li:first-child {
+  background-color: lightblue;
+}
+
+/* Last child */
+.list li:last-child {
+  background-color: lightpink;
+}
+
+/* nth-child, you can use formulas like 3n+0 > (3,6,9...), or use even(pair) or odd */
+.list li:nth-child(3) {
+  background-color: lightseagreen;
+  color: white;
+}
+
+/* ::after */
+.is-required::after {
+  content: '*';
+  color: red;
+  margin-left: 2px;
+}
+
+/* ::before */
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box::before {
+  content: '';
+  background-color: red;
+  z-index: -11;
+  width: 53%;
+  height: 30%;
+  position: absolute;
+  opacity: .6;
+}
