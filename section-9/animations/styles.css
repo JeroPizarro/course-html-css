@@ -1,0 +1,76 @@
+body {
+  background-color: #333;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  position: relative;
+}
+
+.animate-one {
+  /* animation-name: animate1;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: alternate;
+  animation-timing-function: ease; */
+  animation: animate1 3s forwards 1s ease;
+  top: 0;
+}
+
+.animate-two {
+  animation: animate2 5s forwards 3s ease;
+  top: 0px;
+  left: 0;
+}
+
+@keyframes animate1 {
+  from {
+    opacity: 1;
+  }
+  to {
+    width: 600px;
+    background-color: red;
+  }
+}
+
+@keyframes animate2 {
+  /* Can use any % */
+  25% {
+    top: 0;
+    left: 400px;
+  }
+
+  50% {
+    top: 200px;
+    left: 400px;
+  }
+
+  75% {
+    top: 200px;
+    left: 0px;
+  }
+}
+
+.animate-three {
+  /* transition-property: background;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+  transition-timing-function: ease-in; */
+  transition: all 2s ease;
+}
+
+.box:hover.animate-three {
+  background-color: yellowgreen;
+  border-radius: 50%;
+}
+
+.animate-four {
+  transition: all 2s ease;
+}
+
+.box:hover.animate-four {
+  background-color: blue;
+  transform: rotate(90deg);
+}
