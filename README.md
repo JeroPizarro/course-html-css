@@ -10,3 +10,5 @@ Folder structure:
   - section-6: Flexbox
   - section-7: EdgeLedger website
   - section-9: Advanced css
+  - section-10: Mini projects
+  - ...
