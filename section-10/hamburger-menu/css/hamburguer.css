@@ -1,0 +1,184 @@
+.menu-wrap {
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  cursor: pointer;
+  height: 50px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 50px;
+  z-index: 2;
+}
+
+/* Chestnut hover */
+.menu-wrap .toggler:hover + .hamburger > .em-chestnut,
+.menu-wrap .hamburger:hover > .em-chestnut {
+  animation: chestnut-swing 0.8s ease-in infinite;
+}
+
+/* Chestnut leave */
+.menu-wrap .toggler:checked + .hamburger > .em-chestnut {
+  animation: chestnut-left 1s ease-in forwards;
+}
+
+/* Close button appear */
+.menu-wrap .toggler:checked + .hamburger > div {
+  animation: close-button 0.6s ease-out 1s forwards;
+}
+
+.menu-wrap .hamburger {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  height: 60px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 60px;
+  z-index: 1;
+}
+
+/* Close button styles */
+.menu-wrap .hamburger > div {
+  align-items: center;
+  background-color: var(--white-color);
+  display: flex;
+  flex: none;
+  height: 2px;
+  justify-content: center;
+  position: absolute;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.menu-wrap .hamburger > div::before {
+  background-color: inherit;
+  content: '';
+  height: 2px;
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 100%;
+  z-index: 1;
+}
+
+.menu-wrap .toggler:checked ~ .menu {
+  /* ~ is used to select an element which precedes other elem */
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > .menu-overlay {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > .menu-overlay > .inner-layer {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+}
+
+.menu-wrap .menu-overlay {
+  align-items: center;
+  background-color: var(--overlay-color);
+  border-radius: 50%;
+  display: flex;
+  flex: none;
+  height: 200vh;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+  width: 200vw;
+}
+
+.menu-wrap .inner-layer {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.inner-layer ul {
+  list-style: none;
+}
+
+.inner-layer li {
+  color: var(--white-color);
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.inner-layer li a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+.inner-layer li a:hover {
+  color: var(--secondary-color);
+}
+
+@keyframes chestnut-left {
+  0% {
+    display: block;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+
+@keyframes chestnut-swing {
+  0% {
+    transform: rotate(25deg);
+  }
+  50% {
+    font-size: 1.8rem;
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}
+
+@keyframes close-button {
+  0% {
+    width: 30%;
+  }
+  80% {
+    transform: rotate(-45deg);
+  }
+  90% {
+    transform: rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    width: 60%;
+  }
+}
