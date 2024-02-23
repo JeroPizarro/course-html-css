@@ -58,6 +58,8 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  visibility: hidden;
+  opacity: 0;
 }
 
 #timeline ul li > div > img {
@@ -67,7 +69,7 @@ h1 {
   box-shadow: 4px 4px yellow;
 }
 
-/* Content */
+/* Copy */
 #timeline ul li > div > div {
   display: flex;
   flex-direction: column;
@@ -101,10 +103,12 @@ h1 {
 /* Box position */
 #timeline ul li:nth-child(odd) > div {
   left: 40px;
+  transform: translate(200px, 0);
 }
 
 #timeline ul li:nth-child(even) > div {
   left: -484px;
+  transform: translate(-200px, 0);
 }
 
 /* Bullet */
@@ -124,4 +128,53 @@ h1 {
 .year {
   padding: 2px;
   background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1024px) {
+  #timeline ul li > div {
+    flex-direction: column;
+    width: 250px;
+  }
+
+  #timeline ul li:nth-child(even) > div {
+    left: -284px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #main-header {
+    padding: 0 2rem;
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+
+  #timeline ul li {
+    margin: 0;
+    margin-left: 10vw;
+  }
+
+  #timeline ul li > div {
+    flex-direction: column;
+    width: 250px;
+  }
+
+  #timeline ul li:nth-child(even) > div {
+    left: 40px;
+  }
+
+  #timeline ul li:nth-child(even) > div::before {
+    left: -22px;
+    border-width: 8px 14px 8px 0;
+    border-color: transparent var(--primary-color) transparent transparent;
+  }
+}
+
+/* Animations */
+#timeline ul li.show div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
 }
