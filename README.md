@@ -13,4 +13,5 @@ Folder structure:
 - section-9: Advanced css
 - section-10: Mini projects
 - section-11: CSS Grid
+- section-12: News Grid
 - ...
