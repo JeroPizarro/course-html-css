@@ -192,6 +192,16 @@ p {
   }
 }
 
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  gap: 1rem;
+
+  & > *:first-child {
+    grid-row: 1 / span 3;
+  }
+}
+
 /* Navbar */
 #main-nav {
   background-color: var(--white-color);
