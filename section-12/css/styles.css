@@ -212,9 +212,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 2;
-}
 
-#main-nav {
   .container {
     display: grid;
     grid-template-columns: 6fr 3fr 2fr;
@@ -230,10 +228,10 @@ p {
     display: flex;
     gap: 1rem;
     justify-self: center;
-  }
 
-  .social i {
-    color: var(--gray-color);
+    i {
+      color: var(--gray-color);
+    }
   }
 
   ul {
@@ -319,7 +317,7 @@ p {
     align-items: center;
     background-color: var(--light-color);
     padding: 1rem;
-    margin-bottom: 1%;
+    margin-bottom: 1rem;
 
     .category {
       margin: 0;
@@ -351,7 +349,7 @@ p {
     gap: 1.5rem;
 
     input {
-      width: 90%;
+      width: 100%;
 
       &[type='email'] {
         padding: 0.5rem;
