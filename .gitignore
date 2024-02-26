@@ -1,5 +1,11 @@
-# Ignora la carpeta node_modules
+# Ignore node_modules
 node_modules
 
-# Ignora archivos de configuración SASS
+# Ignore SASS config
 .sass-cache
+
+# Ignore MacOs files
+.DS_Store
+
+# Ignore PS files
+*.psd

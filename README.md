@@ -13,6 +13,6 @@ Folder structure:
 - section-9: Advanced css
 - section-10: Mini projects
 - section-11: CSS Grid
-- section-12: News Grid
+- section-12: News Grid website
 - section-14: Sass
-- ...
+- section-15: Portfolio website
