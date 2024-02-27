@@ -44,6 +44,9 @@ input[class^='btn btn-']:hover {
 .py-3 {
   padding: 3rem 0; }
 
+.py-4 {
+  padding: 4rem 0; }
+
 .p-1 {
   padding: 1rem; }
 
@@ -61,6 +64,18 @@ input[class^='btn btn-']:hover {
 
 .my-3 {
   margin: 3rem 0; }
+
+.bg-main {
+  background-color: #ffbc00;
+  color: #333; }
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333; }
+
+.bg-dark {
+  background-color: #333;
+  color: #f4f4f4; }
 
 .section-title {
   font-size: 2rem;
@@ -142,6 +157,11 @@ img {
       font-size: 4rem;
       line-height: 1.2; }
 
+#header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 8.5rem;
+  border-bottom: 3px solid #ffbc00; }
+
 #home-a .specials {
   display: grid;
   gap: 1rem;
@@ -162,6 +182,56 @@ img {
   #home-b .stats > div:nth-child(even) {
     background-color: #ccc; }
 
+#home-c .process {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); }
+  #home-c .process > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; }
+  #home-c .process-icon {
+    background-color: #333;
+    border-radius: 50%;
+    line-height: 60px;
+    color: #fff;
+    padding: 16px;
+    width: 90px;
+    height: 90px;
+    transition: all 1s; }
+    #home-c .process-icon:hover {
+      background-color: #ffbc00;
+      width: 100px;
+      height: 100px;
+      line-height: 70px; }
+      #home-c .process-icon:hover > .process-step {
+        background-color: #333; }
+  #home-c .process-step {
+    background-color: #ffbc00;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    transition: all 1s; }
+    #home-c .process-step:hover {
+      background-color: #333; }
+  #home-c .process-line {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #home-c .process-line::after {
+      content: '';
+      position: absolute;
+      height: 10px;
+      width: 5rem;
+      background: #ffbc00;
+      border-radius: 5px; }
+
 #main-footer {
   background-color: #333;
   color: #fff;
@@ -179,3 +249,70 @@ img {
     padding: 0.5rem; }
     #main-footer .social .fab:hover {
       background-color: #ffbc00; }
+
+#about-a .about-info {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem; }
+  #about-a .about-info .bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    border-left: 3px solid #ffbc00; }
+
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #ccc;
+  margin-bottom: 0.5rem; }
+  #about-b .progress div {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #ffbc00; }
+
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem; }
+
+#about-d .testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem; }
+  #about-d .testimonials > div {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #about-d .testimonials > div > p {
+      position: relative;
+      padding: 40px 0;
+      text-align: center; }
+      #about-d .testimonials > div > p::before {
+        content: '"';
+        font-size: 100px;
+        color: #ffbc00;
+        position: absolute;
+        left: 0px;
+        line-height: 0.1rem; }
+      #about-d .testimonials > div > p::after {
+        content: '"';
+        font-size: 100px;
+        color: #ffbc00;
+        position: absolute;
+        bottom: 0px;
+        line-height: 0.1rem;
+        right: 0; }
+    #about-d .testimonials > div > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem; }
+      #about-d .testimonials > div > div img {
+        width: 200px;
+        border-radius: 50%; }

@@ -90,6 +90,9 @@ img {
   }
 
   &-inner {
+    background: $bg-image no-repeat 20% 30% / cover;
+    height: 8.5rem;
+    border-bottom: 3px solid $main-color;
   }
 }
 
@@ -129,6 +132,75 @@ img {
       }
     }
   }
+
+  &-c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+
+      &-icon {
+        background-color: $dark-color;
+        border-radius: 50%;
+        line-height: 60px;
+        color: #fff;
+        padding: 16px;
+        width: 90px;
+        height: 90px;
+        transition: all 1s;
+
+        &:hover {
+          background-color: $main-color;
+          width: 100px;
+          height: 100px;
+          line-height: 70px;
+
+          & > .process-step {
+            background-color: $dark-color;
+          }
+        }
+      }
+
+      &-step {
+        background-color: $main-color;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1.2rem;
+        transition: all 1s;
+
+        &:hover {
+          background-color: $dark-color;
+        }
+      }
+
+      &-line {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+          content: '';
+          position: absolute;
+          height: 10px;
+          width: 5rem;
+          background: $main-color;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
 }
 
 #main-footer {
@@ -153,6 +225,103 @@ img {
 
       &:hover {
         background-color: $main-color;
+      }
+    }
+  }
+}
+
+#about {
+  &-a {
+    .about-info {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+
+      .bio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        border-left: 3px solid $main-color;
+      }
+    }
+  }
+
+  &-b {
+    .progress {
+      overflow: hidden;
+      height: 20px;
+      border-radius: 15px;
+      background-color: $medium-color;
+      margin-bottom: 0.5rem;
+
+      div {
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background-color: $main-color;
+      }
+    }
+  }
+
+  &-c {
+    .about-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem;
+    }
+  }
+
+  &-d {
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+
+      & > div {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > p {
+          position: relative;
+          padding: 40px 0;
+          text-align: center;
+
+          &::before {
+            content: '"';
+            font-size: 100px;
+            color: $main-color;
+            position: absolute;
+            left: 0px;
+            line-height: 0.1rem;
+          }
+
+          &::after {
+            content: '"';
+            font-size: 100px;
+            color: $main-color;
+            position: absolute;
+            bottom: 0px;
+            line-height: 0.1rem;
+            right: 0;
+          }
+        }
+
+        & > div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+
+          img {
+            width: 200px;
+            border-radius: 50%;
+          }
+        }
       }
     }
   }

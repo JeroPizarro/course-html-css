@@ -65,6 +65,9 @@ input[class^='btn btn-']:hover {
   &-3 {
     padding: 3rem 0;
   }
+  &-4 {
+    padding: 4rem 0;
+  }
 }
 
 .p {
@@ -88,6 +91,23 @@ input[class^='btn btn-']:hover {
   }
   &-3 {
     margin: 3rem 0;
+  }
+}
+
+.bg {
+  &-main {
+    background-color: $main-color;
+    color: $dark-color;
+  }
+
+  &-light {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+
+  &-dark {
+    background-color: $dark-color;
+    color: $light-color;
   }
 }
 
