@@ -77,6 +77,9 @@ input[class^='btn btn-']:hover {
   background-color: #333;
   color: #f4f4f4; }
 
+.heading-xl {
+  font-size: 3rem; }
+
 .section-title {
   font-size: 2rem;
   display: block;
@@ -389,3 +392,32 @@ img {
     #work-a .items .item:hover .item-text {
       opacity: 1;
       transform: translateY(0); }
+
+#contact-a .text-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; }
+  #contact-a .text-fields input[type='text'],
+  #contact-a .text-fields input[type='email'],
+  #contact-a .text-fields textarea {
+    width: 90%;
+    height: 3rem;
+    border: 2px solid #333;
+    padding: 1rem;
+    transition: all 0.5s ease; }
+    #contact-a .text-fields input[type='text']:focus,
+    #contact-a .text-fields input[type='email']:focus,
+    #contact-a .text-fields textarea:focus {
+      border: 2px solid #ffbc00;
+      outline: 1px solid #ffbc00; }
+  #contact-a .text-fields textarea {
+    height: 6rem; }
+
+#contact-b .contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  #contact-b .contact-info > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; }

@@ -340,7 +340,6 @@ img {
         overflow: hidden;
         box-shadow: 0 5px 10px 0 rgba($color: #000000, $alpha: 0.3);
 
-
         &::after {
           content: '';
           position: absolute;
@@ -425,6 +424,49 @@ img {
           opacity: 1;
           transform: translateY(0);
         }
+      }
+    }
+  }
+}
+
+#contact {
+  &-a {
+    .text-fields {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      input[type='text'],
+      input[type='email'],
+      textarea {
+        width: 90%;
+        height: 3rem;
+        border: 2px solid $dark-color;
+        padding: 1rem;
+        transition: all 0.5s ease;
+
+        &:focus {
+          border: 2px solid $main-color;
+          outline: 1px solid $main-color;
+        }
+      }
+
+      textarea {
+        height: 6rem;
+      }
+    }
+  }
+
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
       }
     }
   }
